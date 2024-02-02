@@ -1,6 +1,8 @@
-struct queue<T> {
-    val: T
+use raw_vec::RawVec;
 
+pub struct Queue<T> {
+    buf: RawVec<T>,
+    len: usize
 }
 
 impl<T> queue<T> {
